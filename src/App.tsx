@@ -10,6 +10,7 @@ import Experience from "./components/Experience/ExperienceSection";
 import Projects from "./components/Projects/ProjectSection";
 import Contact from "./components/Contact/ContactSection";
 import ProjectCaseStudy from "./components/Projects/ProjectCaseStudy";
+import TerminalModal from "./components/Terminal/TerminalModal";
 
 function HomePage() {
   return (
@@ -34,6 +35,7 @@ function App() {
           <Route path="/projects/:slug" element={<ProjectCaseStudy />} />
           <Route path="*" element={<HomePage />} />
         </Routes>
+        <TerminalModal />
         <Analytics />
         <SpeedInsights />
       </BrowserRouter>

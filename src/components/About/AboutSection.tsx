@@ -46,11 +46,7 @@ const educationJourney = [
     }
 ];
 
-const quickStats = [
-    { value: "1~", label: "Years of Experience", accent: "text-foreground" },
-    { value: "3×", label: "Academic Honors", accent: "text-foreground" },
-    { value: "4+", label: "Years Coding", accent: "text-foreground" },
-];
+
 
 export default function About() {
   return (
@@ -68,27 +64,19 @@ export default function About() {
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center">
           <FadeIn direction="right" delay={0.2}>
-            <div className="flex flex-col gap-6 text-left text-foreground bg-card border-4 border-foreground p-6 sm:p-10 shadow-[8px_8px_0px_0px_var(--foreground)]">
-              <p className="text-lg leading-relaxed font-medium">
-                Full-Stack Developer specializing in <span className="underline underline-offset-4 decoration-2 decoration-foreground font-bold">React, Next.js, Node.js</span>. I turn ideas into scalable, production-ready web applications.
+            <div className="flex flex-col gap-4 text-left text-foreground bg-card border-4 border-foreground p-6 sm:p-10 shadow-[8px_8px_0px_0px_var(--foreground)]">
+              <p className="text-lg sm:text-xl leading-relaxed font-bold text-foreground">
+                AI and Data Engineer who enjoys turning ideas into systems that actually work.
               </p>
-              <p className="text-lg leading-relaxed font-medium">
-                From medical school in Myanmar to self-taught developer to Singapore's top IT students — I thrive on learning, building, and shipping.
+              <p className="text-sm sm:text-base leading-relaxed text-muted-foreground font-medium">
+                I build across the stack, from agentic workflows, LLM and RAG pipelines to data platforms, backend services, and real-time applications. I like understanding what happens beyond the demo — how systems handle real users, changing data, failures, and scale.
               </p>
-
-              {/* Quick Stats - Updated with Neubrutalist boxes */}
-              <div className="grid grid-cols-3 gap-3 mt-4 pt-6 border-t-4 border-foreground">
-                {quickStats.map((stat, i) => (
-                  <div key={i} className="text-center bg-background border-2 border-foreground p-3 shadow-[3px_3px_0px_0px_var(--foreground)]">
-                    <div className={`text-xl sm:text-2xl font-black ${stat.accent}`}>
-                      {stat.value}
-                    </div>
-                    <div className="text-[10px] sm:text-xs font-mono font-black uppercase tracking-tight text-muted-foreground mt-1.5 leading-tight">
-                      {stat.label}
-                    </div>
-                  </div>
-                ))}
-              </div>
+              <p className="text-sm sm:text-base leading-relaxed text-muted-foreground font-medium">
+                Most of my projects start with a simple question: how can I build this better? That curiosity has taken me from building internal tools for student communities to experimenting with AI systems and end-to-end data pipelines.
+              </p>
+              <p className="text-sm sm:text-base leading-relaxed text-muted-foreground font-medium">
+                I'm currently focused on getting better at building reliable, scalable intelligent systems — and shipping more of them.
+              </p>
             </div>
           </FadeIn>
           
@@ -98,7 +86,7 @@ export default function About() {
               <div className="relative w-80 h-96 bg-card border-4 border-foreground shadow-[10px_10px_0px_0px_var(--foreground)] p-3 select-none">
                 <div className="w-full h-full border-2 border-foreground overflow-hidden">
                   <img 
-                    src="/profile.jpeg" 
+                    src="/profile.png" 
                     alt="Profile" 
                     className="w-full h-full object-cover transition-transform duration-700 hover:scale-105" 
                   />

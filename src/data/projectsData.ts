@@ -33,6 +33,8 @@ export const projectsData: Project[] = [
     status: "In active use",
     stack: ["Next.js", "FastAPI", "PostgreSQL", "WebSockets", "AI/LLMs"],
     stackDisplay: "Next.js · FastAPI · PostgreSQL · WebSockets · AI/LLMs",
+    demoLink: "https://tech-hub.mpstmeacm.com/",
+    image: "/projects/techhub.png",
     introduction: [
       "ACM Tech Hub is an internal workspace built to bring the day-to-day operations of the ACM Technical Committee into one system.",
       "Instead of relying on separate spreadsheets, chat groups, meeting notes, and task trackers, the platform combines committee operations into a single role-aware workspace."
@@ -81,6 +83,8 @@ export const projectsData: Project[] = [
     status: "In active use",
     stack: ["Next.js", "FastAPI", "PostgreSQL", "TypeScript", "Cloudinary"],
     stackDisplay: "Next.js · FastAPI · PostgreSQL · TypeScript · Cloudinary",
+    demoLink: "https://member.mpstmeacm.com/",
+    image: "/projects/merchid.png",
     introduction: [
       "MerchID was built to solve a simple problem: committee members needed a digital identity that could be accessed instantly without relying on printed information or manually maintained profile pages.",
       "Each member receives a permanent QR-powered profile that acts as their digital identity within the committee ecosystem."
@@ -129,6 +133,9 @@ export const projectsData: Project[] = [
     status: "Completed",
     stack: ["React", "Node.js", "PostgreSQL", "Gemini API", "Three.js", "Docker"],
     stackDisplay: "React · Node.js · PostgreSQL · Gemini API · Three.js · Docker",
+    demoLink: "https://careerorbit.imalibtw.in/",
+    githubLink: "https://github.com/alilakkadghat/Career-Orbit",
+    image: "/projects/careerorbit.png",
     introduction: [
       "CareerOrbit was built around the idea that placement preparation shouldn't be limited to searching through job listings.",
       "Students have different skills, resumes, experiences, and career goals — but traditional placement platforms often treat them as the same user.",
@@ -283,6 +290,7 @@ export const projectsData: Project[] = [
     status: "Completed",
     stack: ["Three.js", "WebGL", "Vite", "JavaScript"],
     stackDisplay: "Three.js · WebGL · Vite · JavaScript",
+    demoLink: "https://webverse.imalibtw.in/",
     introduction: [
       "Spider-Man 3D WebVerse was an experiment in pushing a traditional website toward something closer to an interactive game.",
       "Instead of presenting information through conventional pages and components, the project uses WebGL and Three.js to create a navigable 3D environment directly inside the browser."

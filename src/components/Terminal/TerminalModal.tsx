@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { FiMinimize2, FiMaximize2, FiX } from "react-icons/fi";
 import { projectsData } from "@/data/projectsData";
+import { getAllBlogs } from "@/lib/blogs";
 
 const ASCII_LOGO = `
   $$$$$$\  $$\       $$$$$$\  $$$$$$\   $$$$$$\   $$$$$$\   $$$$$$\  $$$$$$$\\ 
@@ -58,6 +59,7 @@ export default function TerminalModal() {
               <div><span className="text-emerald-300 font-bold">about</span> - Who am I?</div>
               <div><span className="text-emerald-300 font-bold">skills</span> - Tech stack</div>
               <div><span className="text-emerald-300 font-bold">projects</span> - View case studies</div>
+              <div><span className="text-emerald-300 font-bold">writing</span> - Read articles</div>
               <div><span className="text-emerald-300 font-bold">contact</span> - Email & contact</div>
               <div><span className="text-emerald-300 font-bold">socials</span> - GitHub & LinkedIn</div>
               <div><span className="text-emerald-300 font-bold">resume</span> - View resume</div>
@@ -67,6 +69,38 @@ export default function TerminalModal() {
           </div>
         );
         break;
+
+      case "writing":
+      case "blogs":
+      case "posts": {
+        const blogsList = getAllBlogs();
+        output = (
+          <div className="space-y-2 text-xs text-zinc-300">
+            <p className="text-emerald-400 font-bold">Engineering Writing & Articles ({blogsList.length}):</p>
+            <div className="space-y-1.5 pl-2">
+              {blogsList.map((blog, i) => (
+                <div key={blog.slug} className="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+                  <div>
+                    <span className="text-emerald-300 font-semibold">{i + 1}. {blog.title}</span>
+                  </div>
+                  <a
+                    href={`/writing/${blog.slug}`}
+                    className="text-emerald-400 underline underline-offset-2 hover:text-emerald-200"
+                  >
+                    read post →
+                  </a>
+                </div>
+              ))}
+              <div className="pt-1">
+                <a href="/writing" className="text-emerald-400 underline font-bold">
+                  View All Posts Archive →
+                </a>
+              </div>
+            </div>
+          </div>
+        );
+        break;
+      }
 
       case "about":
         output = (

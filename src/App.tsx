@@ -9,8 +9,11 @@ import Projects from "./components/Projects/ProjectSection";
 import Experience from "./components/Experience/ExperienceSection";
 import Skills from "./components/Skills/SkillsSection";
 import Roadmap from "./components/Roadmap/RoadmapSection";
+import BlogSection from "./components/Blogs/BlogSection";
 import Contact from "./components/Contact/ContactSection";
 import ProjectCaseStudy from "./components/Projects/ProjectCaseStudy";
+import BlogPostPage from "./components/Blogs/BlogPostPage";
+import WritingPage from "./components/Blogs/WritingPage";
 import TerminalModal from "./components/Terminal/TerminalModal";
 
 function HomePage() {
@@ -22,6 +25,7 @@ function HomePage() {
       <Experience />
       <Skills />
       <Roadmap />
+      <BlogSection />
       <Contact />
     </main>
   );
@@ -35,6 +39,9 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/projects/:slug" element={<ProjectCaseStudy />} />
+          <Route path="/writing" element={<WritingPage />} />
+          <Route path="/writing/:slug" element={<BlogPostPage />} />
+          <Route path="/blog/:slug" element={<BlogPostPage />} />
           <Route path="*" element={<HomePage />} />
         </Routes>
         <TerminalModal />

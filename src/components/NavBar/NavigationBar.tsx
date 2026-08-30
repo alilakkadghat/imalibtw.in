@@ -22,9 +22,10 @@ export default function NavigationBar() {
   const navItems = [
     { name: "Home", linkTo: "home" },
     { name: "About", linkTo: "about" },
-    { name: "Skills", linkTo: "skills" },
-    { name: "Experience", linkTo: "experience" },
     { name: "Projects", linkTo: "projects" },
+    { name: "Experience", linkTo: "experience" },
+    { name: "Skills", linkTo: "skills" },
+    { name: "Roadmap", linkTo: "roadmap" },
     { name: "Contact", linkTo: "contact" },
   ];
 

@@ -9,14 +9,14 @@ export default function Projects() {
         <FadeIn>
           <div className="text-center mb-16">
             <span className="font-mono inline-block px-3 py-1.5 text-xs font-black tracking-wider uppercase bg-foreground text-background border-2 border-foreground mb-4 select-none">
-              Case Studies & Systems
+              My Portfolio
             </span>
             <h2 className="text-4xl md:text-5xl font-black tracking-tight text-foreground select-none uppercase font-mono mb-4">
               Featured Projects
             </h2>
             <div className="w-24 h-1.5 bg-foreground mx-auto mb-4" />
             <p className="text-md sm:text-lg text-muted-foreground max-w-2xl mx-auto font-medium">
-              Architectural overviews and deep dives into real-world software, AI pipelines, and data systems.
+              A selection of projects where I've turned complex problems into elegant solutions.
             </p>
           </div>
         </FadeIn>

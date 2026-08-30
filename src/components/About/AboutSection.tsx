@@ -1,52 +1,4 @@
-import EducationCard from "../About/EducationCard";
 import FadeIn from "../ui/FadeIn";
-
-const educationJourney = [
-    {
-        year: "2019 — 2020",
-        title: "Medicine in Myanmar",
-        institution: {
-            name: "University of Medicine, Mandalay",
-            link: "https://www.ummdy.gov.mm/",
-            tooltipDescription: "One of the prestigious medical universities in Myanmar, known for producing skilled healthcare professionals."
-        },
-        degree: "Bachelor of Medicine (M.B.B.S.)",
-        description: "Began pursuing medicine, a path I thought was my calling."
-    },
-    {
-        year: "2021 — 2022",
-        title: "Self-Taught Developer",
-        degree: "The Pivot: From Medicine to Code",
-        description: "When the pandemic and political turmoil halted my studies, I taught myself web development through online courses — mastering HTML, CSS, JavaScript, and React."
-    },
-    {
-        year: "2023 — 2026",
-        title: "Information Technology",
-        institution: {
-            name: "Temasek Polytechnic",
-            link: "https://www.tp.edu.sg/home.html",
-            tooltipDescription: "A leading polytechnic in Singapore, renowned for its industry-focused curriculum and strong emphasis on practical skills."
-        },
-        degree: "Diploma in Information Technology",
-        achievements: {
-            honors: [
-                {
-                    name: "Diploma with Merit",
-                    years: "Graduating Class",
-                    tooltipDescription: "An institutional honor awarded to the top 10% of the graduating cohort, recognizing exceptional academic excellence and outstanding performance throughout the diploma program."
-                },
-                {
-                    name: "Director's List",
-                    years: "Year 1 & 2",
-                    tooltipDescription: "An academic honor awarded to the top 10% of the diploma cohort each year, recognizing students with outstanding academic performance."
-                }
-            ]
-        },
-        description: "Built a strong foundation in software engineering while consistently ranking among the top students."
-    }
-];
-
-
 
 export default function About() {
   return (
@@ -96,46 +48,6 @@ export default function About() {
           </FadeIn>
         </div>
       </div>
-
-      {/* Education Journey Section */}
-      <div className="max-w-4xl mx-auto mt-28 px-6 sm:px-10">
-        <FadeIn>
-          <div className="text-center mb-16">
-            <span className="font-mono inline-block px-3 py-1.5 text-xs font-black tracking-wider uppercase bg-foreground text-background border-2 border-foreground mb-4 select-none">
-              My Journey
-            </span>
-            <h2 className="text-4xl font-black text-foreground mb-4 uppercase">Education & Growth</h2>
-            <div className="w-24 h-1.5 bg-foreground mx-auto mb-4" />
-            <p className="text-muted-foreground text-md sm:text-lg max-w-2xl mx-auto font-medium">
-              An unconventional path — from medicine to code, shaped by resilience and curiosity.
-            </p>
-          </div>
-        </FadeIn>
-        
-        {/* Timeline (Refactored to be thick, solid, and left-aligned for maximum card width) */}
-        <div className="relative max-w-3xl mx-auto">
-          <div className="absolute left-4 sm:left-6 top-0 bottom-0 w-1 bg-foreground" />
-          
-          <div className="space-y-10 md:space-y-14">
-            {educationJourney.map((edu, index) => (
-              <FadeIn 
-                key={index} 
-                delay={index * 0.2}
-                direction="right"
-              >
-                <div className="relative flex items-start">
-                  {/* Robust Black Circle Marker */}
-                  <div className="absolute left-4 sm:left-6 w-6 h-6 rounded-full bg-background border-4 border-foreground transform -translate-x-1/2 mt-8 z-10 shadow-[2px_2px_0px_var(--foreground)]" />
-                  
-                  <div className="w-full ml-10 sm:ml-14">
-                    <EducationCard {...edu} />
-                  </div>
-                </div>
-              </FadeIn>
-            ))}
-          </div>
-        </div>
-      </div>
     </section>
-  )
+  );
 }

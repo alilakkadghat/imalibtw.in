@@ -5,9 +5,10 @@ import { SpeedInsights } from "@vercel/speed-insights/react";
 import NavigationBar from "./components/NavBar/NavigationBar";
 import Home from "./components/Home/HomeSection";
 import About from "./components/About/AboutSection";
-import Skills from "./components/Skills/SkillsSection";
-import Experience from "./components/Experience/ExperienceSection";
 import Projects from "./components/Projects/ProjectSection";
+import Experience from "./components/Experience/ExperienceSection";
+import Skills from "./components/Skills/SkillsSection";
+import Roadmap from "./components/Roadmap/RoadmapSection";
 import Contact from "./components/Contact/ContactSection";
 import ProjectCaseStudy from "./components/Projects/ProjectCaseStudy";
 import TerminalModal from "./components/Terminal/TerminalModal";
@@ -17,9 +18,10 @@ function HomePage() {
     <main>
       <Home />
       <About />
-      <Skills />
-      <Experience />
       <Projects />
+      <Experience />
+      <Skills />
+      <Roadmap />
       <Contact />
     </main>
   );

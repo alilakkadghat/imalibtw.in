@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { FiArrowRight, FiArrowUpRight, FiCalendar, FiClock } from "react-icons/fi";
 import { getAllBlogs } from "@/lib/blogs";
-import { TicketMockup, MerchIDMockup, PhoneMockup } from "./BlogMockup";
+import { TicketMockup, MerchIDMockup } from "./BlogMockup";
 import FadeIn from "../ui/FadeIn";
 
 export default function BlogSection() {

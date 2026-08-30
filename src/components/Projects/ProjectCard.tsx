@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { FiArrowUpRight } from "react-icons/fi";
-import { Project } from "@/data/projectsData";
+import type { Project } from "@/data/projectsData";
 
 export default function ProjectCard({ project }: { project: Project }) {
   return (

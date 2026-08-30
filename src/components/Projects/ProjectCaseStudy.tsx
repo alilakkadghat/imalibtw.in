@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useParams, Link, useNavigate } from "react-router-dom";
-import { FiArrowLeft, FiArrowUpRight, FiExternalLink, FiGithub, FiCheckCircle } from "react-icons/fi";
+import { FiArrowLeft, FiExternalLink, FiGithub, FiCheckCircle } from "react-icons/fi";
 import { projectsData } from "@/data/projectsData";
 import FadeIn from "../ui/FadeIn";
 

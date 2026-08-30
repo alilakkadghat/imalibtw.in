@@ -4,7 +4,7 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { FiArrowLeft, FiClock, FiCalendar, FiUser } from "react-icons/fi";
 import { getBlogBySlug, getAllBlogs } from "@/lib/blogs";
-import { TicketMockup, MerchIDMockup, PhoneMockup } from "./BlogMockup";
+import { TicketMockup, MerchIDMockup } from "./BlogMockup";
 import FadeIn from "../ui/FadeIn";
 
 export default function BlogPostPage() {

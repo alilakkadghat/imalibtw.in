@@ -5,12 +5,12 @@
   <p>Specializing in agentic workflows, LLM pipelines, data platforms, and production-ready intelligent systems.</p>
 
   <p>
-    <a href="https://imalibtw.in/"><strong>🌐 Live Portfolio: imalibtw.in</strong></a>
+    <a href="https://www.imalibtw.in/"><strong>🌐 Live Portfolio: www.imalibtw.in</strong></a>
   </p>
 
   <div>
-    <a href="https://imalibtw.in/">
-      <img src="https://img.shields.io/badge/Live_Site-imalibtw.in-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Live Site" />
+    <a href="https://www.imalibtw.in/">
+      <img src="https://img.shields.io/badge/Live_Site-www.imalibtw.in-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Live Site" />
     </a>
     <a href="https://www.linkedin.com/in/aliasgarlakkadghat/">
       <img src="https://img.shields.io/badge/LinkedIn-Aliasgar_Lakkadghat-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
@@ -30,7 +30,7 @@
 
 A high-performance, neubrutalist personal portfolio and engineering platform built with **React 19**, **TypeScript**, **Vite**, and **TailwindCSS v4**. Designed with a calm, technical, and personal tone to showcase production systems, architecture case studies, and engineering writing.
 
-🌐 **Visit Live Application:** [https://imalibtw.in/](https://imalibtw.in/)
+🌐 **Visit Live Application:** [https://www.imalibtw.in/](https://www.imalibtw.in/)
 
 ---
 
@@ -50,7 +50,7 @@ A high-performance, neubrutalist personal portfolio and engineering platform bui
 - 🌓 **Dynamic Theme Provider**:
   - Neubrutalist high-contrast styling with custom shadows and seamless light/dark mode switching.
 - 🔍 **Comprehensive SEO & Structured Data**:
-  - OpenGraph / Twitter Cards, Schema.org JSON-LD structured data (`Person`), `sitemap.xml`, `robots.txt`, `llms.txt`, and `humans.txt`.
+  - OpenGraph / Twitter Cards, Schema.org JSON-LD structured data (`Person`, `WebSite`, `ProfilePage`), `sitemap.xml`, `robots.txt`, `llms.txt`, and `humans.txt`.
 
 ---
 
@@ -61,6 +61,7 @@ A high-performance, neubrutalist personal portfolio and engineering platform bui
 - **Routing**: React Router DOM v7
 - **Markdown Processing**: `react-markdown`, `remark-gfm`
 - **3D & Graphics**: Three.js, WebGL
+- **Deployment**: Vercel (with SPA route rewrites in `vercel.json`)
 
 ---
 
@@ -120,7 +121,7 @@ The system will automatically discover the file, build the route at `/writing/<s
 
 ## 📬 Contact & Connect
 
-- **Website**: [imalibtw.in](https://imalibtw.in/)
+- **Website**: [www.imalibtw.in](https://www.imalibtw.in/)
 - **Email**: [ali280306@gmail.com](mailto:ali280306@gmail.com)
 - **LinkedIn**: [linkedin.com/in/aliasgarlakkadghat](https://www.linkedin.com/in/aliasgarlakkadghat/)
 - **GitHub**: [github.com/alilakkadghat](https://github.com/alilakkadghat)

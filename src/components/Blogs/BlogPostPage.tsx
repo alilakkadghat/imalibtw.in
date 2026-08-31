@@ -5,6 +5,7 @@ import remarkGfm from "remark-gfm";
 import { FiArrowLeft, FiClock, FiCalendar, FiUser } from "react-icons/fi";
 import { getBlogBySlug, getAllBlogs } from "@/lib/blogs";
 import { TicketMockup, MerchIDMockup } from "./BlogMockup";
+import SEO, { SITE_URL, DEFAULT_OG_IMAGE } from "@/components/SEO/SEO";
 import FadeIn from "../ui/FadeIn";
 
 export default function BlogPostPage() {
@@ -15,14 +16,16 @@ export default function BlogPostPage() {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    if (post) {
-      document.title = `${post.title} | Aliasgar Lakkadghat`;
-    }
-  }, [slug, post]);
+  }, [slug]);
 
   if (!post) {
     return (
       <div className="min-h-screen flex flex-col items-center justify-center pt-24 px-6 text-center">
+        <SEO
+          title="Post Not Found | Aliasgar Lakkadghat"
+          description="The article you are looking for does not exist or has been moved."
+          canonicalUrl={`${SITE_URL}/writing`}
+        />
         <h1 className="text-4xl font-black font-mono mb-4 uppercase">Post Not Found</h1>
         <p className="text-muted-foreground mb-6">The article you are looking for does not exist or has been moved.</p>
         <button
@@ -40,8 +43,72 @@ export default function BlogPostPage() {
   const prevPost = currentIndex > 0 ? allBlogs[currentIndex - 1] : null;
   const nextPost = currentIndex < allBlogs.length - 1 ? allBlogs[currentIndex + 1] : null;
 
+  const articleUrl = `${SITE_URL}/writing/${post.slug}`;
+  const articleImage = post.cover ? `${SITE_URL}${post.cover}` : DEFAULT_OG_IMAGE;
+
+  const articleSchema = [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": `${SITE_URL}/`
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Writing",
+          "item": `${SITE_URL}/writing`
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": post.title,
+          "item": articleUrl
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": post.title,
+      "description": post.description,
+      "image": articleImage,
+      "datePublished": post.date,
+      "dateModified": post.date,
+      "url": articleUrl,
+      "author": {
+        "@type": "Person",
+        "name": post.author || "Aliasgar Lakkadghat",
+        "url": `${SITE_URL}/`
+      },
+      "publisher": {
+        "@type": "Person",
+        "name": "Aliasgar Lakkadghat",
+        "url": `${SITE_URL}/`
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": articleUrl
+      },
+      "articleSection": post.tag
+    }
+  ];
+
   return (
     <div className="min-h-screen bg-background text-foreground pt-24 pb-20">
+      <SEO
+        title={`${post.title} | Aliasgar Lakkadghat`}
+        description={post.description}
+        canonicalUrl={articleUrl}
+        ogType="article"
+        ogImage={articleImage}
+        publishedTime={post.date}
+        schema={articleSchema}
+      />
       <article className="max-w-3xl mx-auto px-6 sm:px-8">
         
         {/* Back Link */}

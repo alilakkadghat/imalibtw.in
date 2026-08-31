@@ -41,8 +41,10 @@ export default function NavigationBar() {
       >
         <img
           src="/port_logo.png"
-          alt="Aliasgar Logo"
-          className="h-7 w-auto object-contain dark:invert"
+          alt="Aliasgar Lakkadghat Logo"
+          width="28"
+          height="28"
+          className="h-7 w-7 object-contain dark:invert"
         />
       </Link>
 

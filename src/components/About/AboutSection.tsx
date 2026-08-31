@@ -39,7 +39,11 @@ export default function About() {
                 <div className="w-full h-full border-2 border-foreground overflow-hidden">
                   <img 
                     src="/profile.png" 
-                    alt="Profile" 
+                    alt="Aliasgar Lakkadghat - AI & Data Engineer" 
+                    width="320"
+                    height="384"
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-full object-cover transition-transform duration-700 hover:scale-105" 
                   />
                 </div>

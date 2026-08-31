@@ -6,7 +6,7 @@
 Aliasgar Lakkadghat is a software engineer based in Mumbai, India. He currently serves as Technical Lead at MPSTME ACM and builds production-grade AI systems, data engineering pipelines, and interactive 3D web applications.
 
 ## Contact & Links
-- Website: https://imalibtw.in/
+- Website: https://www.imalibtw.in/
 - Email: ali280306@gmail.com
 - GitHub: https://github.com/alilakkadghat
 - LinkedIn: https://www.linkedin.com/in/aliasgarlakkadghat/
@@ -27,4 +27,4 @@ Aliasgar Lakkadghat is a software engineer based in Mumbai, India. He currently 
 - **Spider-Man 3D WebVerse**: Browser-based 3D WebGL interactive multiverse experience with DualSense controller support. (https://webverse.imalibtw.in/)
 
 ## Engineering Articles
-- **MerchID: Building a QR-Powered Digital Identity Platform for Committee Members**: https://imalibtw.in/writing/merchid-qr-identity-platform
+- **MerchID: Building a QR-Powered Digital Identity Platform for Committee Members**: https://www.imalibtw.in/writing/merchid-qr-identity-platform

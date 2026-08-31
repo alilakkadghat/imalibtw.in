@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FiArrowLeft, FiClock, FiCalendar, FiArrowUpRight } from "react-icons/fi";
 import { getAllBlogs } from "@/lib/blogs";
+import SEO, { SITE_URL } from "@/components/SEO/SEO";
 import FadeIn from "../ui/FadeIn";
 
 export default function WritingPage() {
@@ -9,11 +10,44 @@ export default function WritingPage() {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    document.title = "Engineering Writing & Systems | Aliasgar Lakkadghat";
   }, []);
+
+  const writingSchema = [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": `${SITE_URL}/`
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Writing",
+          "item": `${SITE_URL}/writing`
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "Engineering Writing & Systems | Aliasgar Lakkadghat",
+      "description": "Technical case studies, system breakdowns, and engineering notes on building production platforms, AI systems, and infrastructure.",
+      "url": `${SITE_URL}/writing`
+    }
+  ];
 
   return (
     <div className="min-h-screen bg-background text-foreground pt-24 pb-20">
+      <SEO
+        title="Engineering Writing & Systems | Aliasgar Lakkadghat"
+        description="Technical case studies, system breakdowns, and engineering notes on building production platforms, AI systems, and infrastructure."
+        canonicalUrl={`${SITE_URL}/writing`}
+        schema={writingSchema}
+      />
       <div className="max-w-4xl mx-auto px-6 sm:px-10">
         
         {/* Back Link */}

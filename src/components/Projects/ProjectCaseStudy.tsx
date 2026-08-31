@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useParams, Link, useNavigate } from "react-router-dom";
 import { FiArrowLeft, FiExternalLink, FiGithub, FiCheckCircle } from "react-icons/fi";
 import { projectsData } from "@/data/projectsData";
+import SEO, { SITE_URL, DEFAULT_OG_IMAGE } from "@/components/SEO/SEO";
 import FadeIn from "../ui/FadeIn";
 
 export default function ProjectCaseStudy() {
@@ -13,14 +14,16 @@ export default function ProjectCaseStudy() {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    if (project) {
-      document.title = `${project.title} — Case Study | Aliasgar Lakkadghat`;
-    }
-  }, [slug, project]);
+  }, [slug]);
 
   if (!project) {
     return (
       <div className="min-h-[80vh] flex flex-col items-center justify-center text-center px-6 pt-24">
+        <SEO
+          title="Project Not Found | Aliasgar Lakkadghat"
+          description="The requested case study does not exist or has been moved."
+          canonicalUrl={`${SITE_URL}/projects`}
+        />
         <h1 className="text-3xl font-black font-mono uppercase mb-4">Project Not Found</h1>
         <p className="text-muted-foreground mb-8">The requested case study does not exist or has been moved.</p>
         <Link
@@ -36,8 +39,61 @@ export default function ProjectCaseStudy() {
   const prevProject = currentIndex > 0 ? projectsData[currentIndex - 1] : null;
   const nextProject = currentIndex < projectsData.length - 1 ? projectsData[currentIndex + 1] : null;
 
+  const projectUrl = `${SITE_URL}/projects/${project.slug}`;
+  const projectImage = project.image ? `${SITE_URL}${project.image}` : DEFAULT_OG_IMAGE;
+
+  const projectSchema = [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": `${SITE_URL}/`
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Projects",
+          "item": `${SITE_URL}/#projects`
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": project.title,
+          "item": projectUrl
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      "name": project.title,
+      "headline": `${project.title} — ${project.subtitle}`,
+      "description": project.homepageDescription,
+      "url": projectUrl,
+      "image": projectImage,
+      "author": {
+        "@type": "Person",
+        "name": "Aliasgar Lakkadghat",
+        "url": `${SITE_URL}/`
+      },
+      "keywords": project.stack.join(", ")
+    }
+  ];
+
   return (
     <article className="pt-24 pb-28 min-h-screen w-full bg-background text-foreground">
+      <SEO
+        title={`${project.title} — Case Study | Aliasgar Lakkadghat`}
+        description={project.homepageDescription}
+        canonicalUrl={projectUrl}
+        ogType="article"
+        ogImage={projectImage}
+        schema={projectSchema}
+      />
       <div className="max-w-4xl mx-auto px-6 sm:px-10">
         
         {/* Back Link */}
@@ -132,7 +188,9 @@ export default function ProjectCaseStudy() {
             {project.image ? (
               <img
                 src={project.image}
-                alt={project.title}
+                alt={`${project.title} - Architecture and Interface Screenshot`}
+                loading="lazy"
+                decoding="async"
                 className="w-full h-auto max-h-[480px] object-cover object-top border-b-2 border-foreground"
               />
             ) : (

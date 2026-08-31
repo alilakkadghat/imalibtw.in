@@ -16,15 +16,17 @@ import BlogPostPage from "./components/Blogs/BlogPostPage";
 import WritingPage from "./components/Blogs/WritingPage";
 import TerminalModal from "./components/Terminal/TerminalModal";
 
-import { useEffect } from "react";
+import SEO, { SITE_URL } from "./components/SEO/SEO";
 
 function HomePage() {
-  useEffect(() => {
-    document.title = "Aliasgar Lakkadghat | AI & Data Engineer";
-  }, []);
-
   return (
     <main>
+      <SEO
+        title="Aliasgar Lakkadghat | AI & Data Engineer"
+        description="AI & Data Engineer specializing in agentic workflows, LLM and RAG pipelines, data platforms, and production-ready intelligent systems."
+        canonicalUrl={`${SITE_URL}/`}
+        ogType="website"
+      />
       <Home />
       <About />
       <Projects />

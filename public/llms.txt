@@ -1,0 +1,30 @@
+# Aliasgar Lakkadghat
+
+> AI Engineer & Data Engineer specializing in agentic workflows, LLM pipelines, data platforms, and production-ready ML systems.
+
+## Summary
+Aliasgar Lakkadghat is a software engineer based in Mumbai, India. He currently serves as Technical Lead at MPSTME ACM and builds production-grade AI systems, data engineering pipelines, and interactive 3D web applications.
+
+## Contact & Links
+- Website: https://imalibtw.in/
+- Email: ali280306@gmail.com
+- GitHub: https://github.com/alilakkadghat
+- LinkedIn: https://www.linkedin.com/in/aliasgarlakkadghat/
+
+## Technical Expertise
+- **Languages**: Python, JavaScript, Java, SQL
+- **AI & ML**: Agentic Workflows, LangChain, LangGraph, RAG (Retrieval-Augmented Generation), Ollama, OpenRouter, Vector Search
+- **Data Engineering**: Databricks, dbt, Apache Airflow, Apache Kafka, BigQuery, Neon DB, PostgreSQL
+- **Backend & Cloud**: FastAPI, Node.js, Express, Prisma, Supabase, Docker, GCP, AWS
+- **Frontend & 3D**: React.js, Next.js, Three.js, WebGL, TailwindCSS, HTML5 Gamepad API
+
+## Featured Projects
+- **ACM Tech Hub 1.0**: Technical committee operating system for attendance, mentorship, task management, collaboration, meetings, and AI-powered workflows. (https://tech-hub.mpstmeacm.com/)
+- **MerchID**: QR-powered digital identity platform for committee members with live theme engines, dynamic 307 redirects, and privacy-first analytics. (https://member.mpstmeacm.com/)
+- **CareerOrbit**: AI-powered placement intelligence platform analyzing resumes and skills with Three.js visualizations. (https://careerorbit.imalibtw.in/)
+- **Walmart Data Engineering Pipeline**: Medallion architecture analytics engineering platform utilizing Databricks, dbt, Airflow, and Power BI.
+- **WhatsApp RAG Bot**: Retrieval-augmented conversational assistant connecting knowledge bases with WhatsApp.
+- **Spider-Man 3D WebVerse**: Browser-based 3D WebGL interactive multiverse experience with DualSense controller support. (https://webverse.imalibtw.in/)
+
+## Engineering Articles
+- **MerchID: Building a QR-Powered Digital Identity Platform for Committee Members**: https://imalibtw.in/writing/merchid-qr-identity-platform

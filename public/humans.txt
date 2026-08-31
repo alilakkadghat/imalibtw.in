@@ -1,0 +1,14 @@
+/* TEAM */
+  Engineer & Architect: Aliasgar Lakkadghat
+  Contact: ali280306@gmail.com
+  GitHub: @alilakkadghat
+  LinkedIn: /in/aliasgarlakkadghat
+  Location: Mumbai, India
+
+/* SITE */
+  Standards: HTML5, CSS3, ESNext, TypeScript
+  Frameworks: React 19, Vite, React Router, TailwindCSS v4
+  Typography: Inter, Monospace, Syne
+  Components: Neubrutalist Design System, Custom SVG Iconography
+  Last Updated: 2026-08-31
+  Software: Built with Google Antigravity

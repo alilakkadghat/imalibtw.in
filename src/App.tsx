@@ -16,7 +16,13 @@ import BlogPostPage from "./components/Blogs/BlogPostPage";
 import WritingPage from "./components/Blogs/WritingPage";
 import TerminalModal from "./components/Terminal/TerminalModal";
 
+import { useEffect } from "react";
+
 function HomePage() {
+  useEffect(() => {
+    document.title = "Aliasgar Lakkadghat | AI & Data Engineer";
+  }, []);
+
   return (
     <main>
       <Home />

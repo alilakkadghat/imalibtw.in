@@ -15,7 +15,10 @@ export default function BlogPostPage() {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, [slug]);
+    if (post) {
+      document.title = `${post.title} | Aliasgar Lakkadghat`;
+    }
+  }, [slug, post]);
 
   if (!post) {
     return (

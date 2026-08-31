@@ -1,0 +1,16 @@
+{
+  "name": "Aliasgar Lakkadghat | Portfolio",
+  "short_name": "Aliasgar",
+  "description": "AI Engineer & Data Engineer specializing in agentic workflows, LLM pipelines, data platforms, and production-ready ML systems.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
+  "icons": [
+    {
+      "src": "/port_logo.png",
+      "sizes": "192x192 512x512",
+      "type": "image/png"
+    }
+  ]
+}

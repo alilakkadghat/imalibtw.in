@@ -13,7 +13,10 @@ export default function ProjectCaseStudy() {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, [slug]);
+    if (project) {
+      document.title = `${project.title} — Case Study | Aliasgar Lakkadghat`;
+    }
+  }, [slug, project]);
 
   if (!project) {
     return (

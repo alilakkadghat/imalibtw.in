@@ -9,6 +9,7 @@ export default function WritingPage() {
 
   useEffect(() => {
     window.scrollTo(0, 0);
+    document.title = "Engineering Writing & Systems | Aliasgar Lakkadghat";
   }, []);
 
   return (

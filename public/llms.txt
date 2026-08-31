@@ -27,4 +27,5 @@ Aliasgar Lakkadghat is a software engineer based in Mumbai, India. He currently 
 - **Spider-Man 3D WebVerse**: Browser-based 3D WebGL interactive multiverse experience with DualSense controller support. (https://webverse.imalibtw.in/)
 
 ## Engineering Articles
+- **Demystifying Modern Web SEO: From Canonicals to llms.txt and Rich Schemas**: https://www.imalibtw.in/writing/demystifying-modern-web-seo
 - **MerchID: Building a QR-Powered Digital Identity Platform for Committee Members**: https://www.imalibtw.in/writing/merchid-qr-identity-platform

@@ -9,7 +9,7 @@ export interface BlogPost {
   cover?: string;
   readTime: string;
   content: string;
-  mockupType?: "ticket" | "phone" | "merchid" | "image" | "none";
+  mockupType?: "ticket" | "phone" | "merchid" | "seo" | "image" | "none";
 }
 
 // Simple YAML frontmatter parser for browser/Vite environments

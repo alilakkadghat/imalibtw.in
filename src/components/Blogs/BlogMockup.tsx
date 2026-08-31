@@ -14,7 +14,7 @@ const QrIcon = ({ className }: { className?: string }) => (
     <rect x="14" y="3" width="7" height="7" />
     <rect x="14" y="14" width="7" height="7" />
     <rect x="3" y="14" width="7" height="7" />
-    <path d="M7 7h.01M17 7h.01M7 17h.01M17 17h.01" />
+    <path d="M7 7h.01M17 7h.01M7 17h.01" />
   </svg>
 );
 
@@ -98,6 +98,59 @@ export function MerchIDMockup() {
         <div className="flex items-center justify-center gap-1 text-[7.5px] text-emerald-600 dark:text-emerald-400 font-bold border-t border-foreground/10 pt-1">
           <FiCheckCircle className="size-2.5" />
           <span>member.mpstmeacm.com</span>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export function SeoMockup() {
+  return (
+    <div className="w-full h-48 sm:h-56 bg-muted/40 p-4 sm:p-5 flex items-center justify-between gap-4 text-foreground font-mono select-none border-b-3 border-foreground overflow-hidden">
+      {/* Left Text Block */}
+      <div className="flex-1 space-y-2">
+        <div className="text-[10px] text-[#ff6633] font-black tracking-widest uppercase">
+          SEARCH · INFRASTRUCTURE
+        </div>
+        <div className="text-lg sm:text-xl font-black text-foreground leading-tight">
+          SEO & Schema <span className="text-[#ff6633]">Engine</span>
+        </div>
+        <p className="text-[10px] sm:text-[11px] text-muted-foreground leading-snug line-clamp-3 font-medium">
+          Canonical unification, JSON-LD Schema graphs, and llms.txt AI crawler indexing.
+        </p>
+      </div>
+
+      {/* Right Search Engine Rich Snippet Mockup */}
+      <div className="w-36 sm:w-40 h-44 bg-card border-2 border-foreground rounded-xl p-2.5 flex flex-col justify-between shadow-[4px_4px_0px_0px_var(--foreground)] relative shrink-0">
+        <div className="flex items-center justify-between text-[8px] text-muted-foreground font-bold border-b border-foreground/15 pb-1">
+          <span>SEARCH CONSOLE</span>
+          <span className="text-emerald-500 font-black flex items-center gap-1">
+            <span className="size-1.5 rounded-full bg-emerald-500 animate-pulse" />
+            200 OK
+          </span>
+        </div>
+
+        {/* Snippet Card */}
+        <div className="flex flex-col justify-center my-auto py-1 space-y-1.5">
+          <div className="flex items-center gap-1 text-[8px] text-emerald-600 dark:text-emerald-400 font-bold truncate">
+            <span>https://www.imalibtw.in</span>
+          </div>
+          <div className="text-[10px] font-black text-foreground leading-tight truncate">
+            Aliasgar Lakkadghat
+          </div>
+          <div className="flex flex-wrap gap-1">
+            <span className="text-[7.5px] bg-[#ff6633]/15 text-[#ff6633] border border-[#ff6633]/30 px-1 py-0.2 rounded font-bold uppercase">
+              ProfilePage
+            </span>
+            <span className="text-[7.5px] bg-foreground/10 text-foreground border border-foreground/20 px-1 py-0.2 rounded font-bold uppercase">
+              llms.txt
+            </span>
+          </div>
+        </div>
+
+        <div className="flex items-center justify-between text-[7.5px] text-muted-foreground font-bold border-t border-foreground/10 pt-1">
+          <span>Canonical:</span>
+          <span className="text-emerald-600 dark:text-emerald-400 font-black">Unified (www)</span>
         </div>
       </div>
     </div>

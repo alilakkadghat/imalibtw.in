@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { FiArrowRight, FiArrowUpRight, FiCalendar, FiClock } from "react-icons/fi";
 import { getAllBlogs } from "@/lib/blogs";
-import { TicketMockup, MerchIDMockup } from "./BlogMockup";
+import { TicketMockup, MerchIDMockup, SeoMockup } from "./BlogMockup";
 import FadeIn from "../ui/FadeIn";
 
 export default function BlogSection() {
@@ -51,6 +51,8 @@ export default function BlogSection() {
                 <div className="overflow-hidden border-b-3 border-foreground bg-muted/20">
                   {post.mockupType === "merchid" || post.mockupType === "phone" ? (
                     <MerchIDMockup />
+                  ) : post.mockupType === "seo" ? (
+                    <SeoMockup />
                   ) : post.mockupType === "ticket" ? (
                     <TicketMockup />
                   ) : post.cover ? (
@@ -60,7 +62,7 @@ export default function BlogSection() {
                       className="w-full h-48 sm:h-56 object-cover object-center group-hover:scale-105 transition-transform duration-500"
                     />
                   ) : (
-                    <TicketMockup />
+                    <SeoMockup />
                   )}
                 </div>
 

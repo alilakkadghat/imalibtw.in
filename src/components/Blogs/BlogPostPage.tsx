@@ -4,7 +4,7 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { FiArrowLeft, FiClock, FiCalendar, FiUser } from "react-icons/fi";
 import { getBlogBySlug, getAllBlogs } from "@/lib/blogs";
-import { TicketMockup, MerchIDMockup, SeoMockup } from "./BlogMockup";
+import { BlogCardMockup } from "./BlogMockup";
 import SEO, { SITE_URL, DEFAULT_OG_IMAGE } from "@/components/SEO/SEO";
 import FadeIn from "../ui/FadeIn";
 
@@ -160,15 +160,7 @@ export default function BlogPostPage() {
         {/* Featured Visual Mockup or Cover Banner */}
         <FadeIn delay={0.1}>
           <div className="border-3 sm:border-4 border-foreground shadow-[8px_8px_0px_0px_var(--foreground)] mb-12 overflow-hidden bg-card">
-            {post.mockupType === "merchid" || post.mockupType === "phone" ? (
-              <MerchIDMockup />
-            ) : post.mockupType === "seo" ? (
-              <SeoMockup />
-            ) : post.mockupType === "ticket" ? (
-              <TicketMockup />
-            ) : post.cover ? (
-              <img src={post.cover} alt={post.title} className="w-full h-auto object-cover max-h-[440px]" />
-            ) : null}
+            <BlogCardMockup post={post} />
           </div>
         </FadeIn>
 

@@ -9,7 +9,15 @@ export interface BlogPost {
   cover?: string;
   readTime: string;
   content: string;
-  mockupType?: "ticket" | "phone" | "merchid" | "seo" | "image" | "none";
+  mockupType?: string;
+  mockupTag?: string;
+  mockupTitle?: string;
+  mockupSubtitle?: string;
+  mockupHeader?: string;
+  mockupBadge?: string;
+  mockupPills?: string[];
+  mockupStatus?: string;
+  mockupIcon?: string;
 }
 
 // Simple YAML frontmatter parser for browser/Vite environments
@@ -78,6 +86,10 @@ export function getAllBlogs(): BlogPost[] {
     const date = data.date || "2026-08-23";
     const readTime = data.readTime || calculateReadTime(content);
 
+    const pills = data.mockupPills
+      ? data.mockupPills.split(",").map((p) => p.trim())
+      : undefined;
+
     return {
       slug,
       title: data.title || slug,
@@ -89,7 +101,15 @@ export function getAllBlogs(): BlogPost[] {
       cover: data.cover || "",
       readTime,
       content,
-      mockupType: (data.mockupType as BlogPost["mockupType"]) || (slug.includes("conc-qr") ? "phone" : "ticket"),
+      mockupType: data.mockupType || (slug.includes("merchid") ? "merchid" : slug.includes("seo") ? "seo" : "auto"),
+      mockupTag: data.mockupTag,
+      mockupTitle: data.mockupTitle,
+      mockupSubtitle: data.mockupSubtitle,
+      mockupHeader: data.mockupHeader,
+      mockupBadge: data.mockupBadge,
+      mockupPills: pills,
+      mockupStatus: data.mockupStatus,
+      mockupIcon: data.mockupIcon,
     };
   });
 

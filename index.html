@@ -14,7 +14,7 @@
     <meta name="robots" content="index, follow" />
 
     <!-- Open Graph / Facebook / LinkedIn -->
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content="profile" />
     <meta property="og:url" content="https://www.imalibtw.in/" />
     <meta property="og:site_name" content="Aliasgar Lakkadghat" />
     <meta property="og:title" content="Aliasgar Lakkadghat | AI & Data Engineer" />
@@ -35,57 +35,57 @@
     <link rel="manifest" href="/site.webmanifest" />
     <link rel="author" href="/humans.txt" />
 
-    <!-- JSON-LD Structured Data Schema -->
+    <!-- Google Search Rich Results: ProfilePage Schema -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@graph": [
+        "@type": "ProfilePage",
+        "dateCreated": "2025-01-01T00:00:00+05:30",
+        "dateModified": "2026-09-01T00:00:00+05:30",
+        "mainEntity": {
+          "@type": "Person",
+          "name": "Aliasgar Lakkadghat",
+          "alternateName": "imalibtw",
+          "identifier": "alilakkadghat",
+          "description": "AI & Data Engineer specializing in agentic workflows, LLM and RAG pipelines, data platforms, and production-ready intelligent systems.",
+          "image": "https://www.imalibtw.in/profile.png",
+          "jobTitle": "AI & Data Engineer",
+          "url": "https://www.imalibtw.in/",
+          "sameAs": [
+            "https://github.com/alilakkadghat",
+            "https://www.linkedin.com/in/aliasgarlakkadghat/"
+          ],
+          "knowsAbout": [
+            "Artificial Intelligence",
+            "Agentic Workflows",
+            "LLM Pipelines",
+            "Retrieval-Augmented Generation (RAG)",
+            "Data Engineering",
+            "Python",
+            "FastAPI",
+            "React",
+            "Next.js",
+            "Three.js",
+            "Databricks",
+            "dbt",
+            "Apache Airflow",
+            "PostgreSQL"
+          ]
+        }
+      }
+    </script>
+
+    <!-- Google Search Rich Results: Breadcrumbs Schema -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
           {
-            "@type": "Person",
-            "@id": "https://www.imalibtw.in/#person",
-            "name": "Aliasgar Lakkadghat",
-            "url": "https://www.imalibtw.in/",
-            "image": "https://www.imalibtw.in/profile.png",
-            "jobTitle": "AI & Data Engineer",
-            "sameAs": [
-              "https://github.com/alilakkadghat",
-              "https://www.linkedin.com/in/aliasgarlakkadghat/"
-            ],
-            "knowsAbout": [
-              "Artificial Intelligence",
-              "Agentic Workflows",
-              "LLM Pipelines",
-              "Retrieval-Augmented Generation (RAG)",
-              "Data Engineering",
-              "Python",
-              "FastAPI",
-              "React",
-              "Next.js",
-              "Three.js",
-              "Databricks",
-              "dbt",
-              "Apache Airflow",
-              "PostgreSQL"
-            ]
-          },
-          {
-            "@type": "WebSite",
-            "@id": "https://www.imalibtw.in/#website",
-            "url": "https://www.imalibtw.in/",
-            "name": "Aliasgar Lakkadghat Portfolio",
-            "description": "Portfolio and engineering case studies of Aliasgar Lakkadghat, AI & Data Engineer.",
-            "publisher": {
-              "@id": "https://www.imalibtw.in/#person"
-            }
-          },
-          {
-            "@type": "ProfilePage",
-            "@id": "https://www.imalibtw.in/#profilepage",
-            "url": "https://www.imalibtw.in/",
-            "name": "Aliasgar Lakkadghat | AI & Data Engineer",
-            "mainEntity": {
-              "@id": "https://www.imalibtw.in/#person"
-            }
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.imalibtw.in/"
           }
         ]
       }

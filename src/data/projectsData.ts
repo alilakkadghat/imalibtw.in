@@ -291,6 +291,7 @@ export const projectsData: Project[] = [
     stack: ["Three.js", "WebGL", "Vite", "JavaScript"],
     stackDisplay: "Three.js · WebGL · Vite · JavaScript",
     demoLink: "https://webverse.imalibtw.in/",
+    image: "/projects/webverse.png",
     introduction: [
       "Spider-Man 3D WebVerse was an experiment in pushing a traditional website toward something closer to an interactive game.",
       "Instead of presenting information through conventional pages and components, the project uses WebGL and Three.js to create a navigable 3D environment directly inside the browser."

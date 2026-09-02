@@ -4,17 +4,17 @@ const roadmapPhases = [
   {
     phaseNumber: "01",
     status: "COMPLETED",
-    title: "Foundation Building",
+    title: "Full-Stack Foundations",
     description:
-      "Built strong foundations in machine learning, deep learning, and backend engineering through coursework, certifications, and hands-on projects. Focused on understanding core ML concepts while actively building.",
+      "Built a strong foundation in software engineering through full-stack projects, backend systems, databases, and cloud deployment. Worked across React, Next.js, FastAPI, Node.js, PostgreSQL, and Docker while learning how to build and ship complete products.",
     isCurrent: false,
   },
   {
     phaseNumber: "02",
     status: "CURRENT",
-    title: "Systems & Research",
+    title: "Production Systems & AI",
     description:
-      "Currently building production AI systems: agentic workflows, LLM pipelines, and applied research in legal AI and healthcare monitoring. Focused on shipping real products.",
+      "Currently building production-ready systems across web, data, and AI. Working with scalable backend architectures, data engineering pipelines, LLM-powered applications, and computer vision while shipping real products through projects and hackathons.",
     isCurrent: true,
   },
   {
@@ -22,7 +22,7 @@ const roadmapPhases = [
     status: "NEXT",
     title: "Scale & Impact",
     description:
-      "Aim to scale AI systems, publish research, and contribute to open-source ecosystems. Building toward global AI engineering or applied research opportunities.",
+      "Aim to work on larger-scale systems involving distributed architectures, data infrastructure, AI engineering, and applied research. Building toward impactful engineering roles where software, data, and AI come together.",
     isCurrent: false,
   },
 ];
